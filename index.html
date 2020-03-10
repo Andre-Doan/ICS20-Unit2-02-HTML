@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>andre's cool Webpage </title>
+  </head>
+  <meta charset="utf-8">
+  <meta name="description" content=" My first webpage, with image">
+  <meta name="keyword"content="MTHS,website">
+  <meta name="author"content="Andre Doan">
+  <meta name="viewport"content="width=device-width, intial scale=1.0">
+  <body>
+  <h1 onclick="this.innerHTML='Vote Andre For President!'">javascript buttons</h1>
+  <p onclick="this.innerHTML='YOU HAVE NO CHOICE!!'">Click me to change text</p>
+  <p id="magictrick" onclick="myfunction4()">MY POWERS ARE INSANE !!I CAN MAKE THIS TEXT DISAPPEAR! ITS OVER 9000!!!</p>
+  <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+  <img id="demo" src="./images/computerclipart.png">
+  <button onclick="myfunction()">changetrump</button>
+  <button onclick="myfunction2()">changecomputer</button>
+  <button onclick="myfunction3()">Click me to change background color</button>
+  <button onclick="document.getElementById('magictrick').style.display='none'">Make me disappear</button>
+  <script>
+  function myfunction() {
+     document.getElementById("demo").src='./images/trumpsface.jpg'
+   }
+  function myfunction2() {
+     document.getElementById('demo').src='./images/computerclipart.png'
+   }
+  function myfunction3() {
+     document.getElementById("demo").style.backgroundColor="blue"
+   }
+  function myfunction4() {
+     document.getElementById('magictrick').style.display='none';
+   }
+  </script>
+  </body>
+</html>
